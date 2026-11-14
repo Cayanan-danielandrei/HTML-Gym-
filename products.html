@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Gym4U</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand-group">
+            <a href="index.html" class="logo">
+                <img src="Images/Gym4u.png" alt="Gym4U"> Gym4U
+            </a>
+            <a class="brand-nav-link" href="products.html" aria-current="page">Products</a>
+            <a class="brand-nav-link" href="index.html#memberships">Memberships</a>
+            <a class="brand-nav-link" href="index.html#trainers">Trainers</a>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="nav-links">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a class="cart-link" href="cart.html" aria-label="Shopping cart" title="Shopping cart">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+                        <path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.4L22 8H6"></path>
+                        <circle cx="10" cy="20" r="1"></circle>
+                        <circle cx="18" cy="20" r="1"></circle>
+                    </svg>
+                    <span>Cart</span>
+                    <span class="cart-count" aria-live="polite" aria-atomic="true" hidden>0</span>
+                </a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="business.html">Business Plan</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false"
+                    title="Switch to light mode">
+                    <span class="theme-toggle-thumb" aria-hidden="true">
+                        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" focusable="false">
+                            <path d="M20.1 14.6A8.1 8.1 0 0 1 9.4 3.9 8.2 8.2 0 1 0 20.1 14.6Z"></path>
+                        </svg>
+                        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" focusable="false">
+                            <circle cx="12" cy="12" r="3.5"></circle>
+                            <path
+                                d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42">
+                            </path>
+                        </svg>
+                    </span>
+                </button></li>
+        </ul>
+    </nav>
+
+    <main class="products-page container" aria-label="Physical product catalog">
+        <header class="page-hero">
+            <p class="eyebrow">Gym4U shop</p>
+            <h1>Fitness products</h1>
+            <p>Browse our proposed selection of protein powders and creatine products. Prices are planning estimates
+                and may change before launch.</p>
+        </header>
+
+        <p id="cart-status" class="cart-status" aria-live="polite"></p>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-start">
+            <div class="col">
+                <article class="card proposal-card product-card h-100">
+                    <img class="card-img-top" src="Product/Product1.jpg" alt="MuscleTech mass gainer vanilla tub">
+                    <div class="card-body">
+                        <h2 class="card-title">MuscleTech Mass Gainer - Vanilla</h2>
+                        <p class="card-text">Vanilla milkshake flavored mass gainer powder in a 2.33 kg tub.</p>
+                        <p class="proposal-price">PHP 3,200</p>
+                        <button class="page-button add-to-cart-button" type="button" data-product-id="product1"
+                            data-product-name="MuscleTech Mass Gainer - Vanilla (Tub)" data-product-price="3200"
+                            data-product-image="Product/Product1.jpg">Add to cart</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card proposal-card product-card h-100">
+                    <img class="card-img-top" src="Product/Product2.jpg" alt="Six Star creatine monohydrate container">
+                    <div class="card-body">
+                        <h2 class="card-title">Six Star Creatine Monohydrate</h2>
+                        <p class="card-text">Unflavored creatine monohydrate powder in a 300 g container.</p>
+                        <p class="proposal-price">PHP 1,000</p>
+                        <button class="page-button add-to-cart-button" type="button" data-product-id="product2"
+                            data-product-name="Six Star Creatine Monohydrate" data-product-price="1000"
+                            data-product-image="Product/Product2.jpg">Add to cart</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card proposal-card product-card h-100">
+                    <img class="card-img-top" src="Product/Product3.jpg"
+                        alt="Hype mass gainer chocolate brownie container">
+                    <div class="card-body">
+                        <h2 class="card-title">Hype Mass Gainer - Chocolate Brownie</h2>
+                        <p class="card-text">Chocolate brownie flavored mass gainer powder in a 3 kg container.</p>
+                        <p class="proposal-price">PHP 2,400</p>
+                        <button class="page-button add-to-cart-button" type="button" data-product-id="product3"
+                            data-product-name="Hype Mass Gainer - Chocolate Brownie" data-product-price="2400"
+                            data-product-image="Product/Product3.jpg">Add to cart</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card proposal-card product-card h-100">
+                    <img class="card-img-top" src="Product/Product4.jpg"
+                        alt="Wellversed creatine monohydrate container">
+                    <div class="card-body">
+                        <h2 class="card-title">Wellversed Creatine Monohydrate</h2>
+                        <p class="card-text">Unflavored micronised creatine monohydrate powder in a 100 g container.</p>
+                        <p class="proposal-price">PHP 500</p>
+                        <button class="page-button add-to-cart-button" type="button" data-product-id="product4"
+                            data-product-name="Wellversed Creatine Monohydrate" data-product-price="500"
+                            data-product-image="Product/Product4.jpg">Add to cart</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card proposal-card product-card h-100">
+                    <img class="card-img-top" src="Product/Product5.jpg"
+                        alt="BeastLife chocolate mass gainer container">
+                    <div class="card-body">
+                        <h2 class="card-title">BeastLife Anabolic Mass Gainer - Chocolate</h2>
+                        <p class="card-text">Belgian chocolate flavored mass gainer powder in a 2.5 kg container.</p>
+                        <p class="proposal-price">PHP 2,400</p>
+                        <button class="page-button add-to-cart-button" type="button" data-product-id="product5"
+                            data-product-name="BeastLife Anabolic Mass Gainer - Chocolate" data-product-price="2400"
+                            data-product-image="Product/Product5.jpg">Add to cart</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card proposal-card product-card h-100">
+                    <img class="card-img-top" src="Product/Product6.jpg"
+                        alt="Body Fortress chocolate whey protein container">
+                    <div class="card-body">
+                        <h2 class="card-title">Body Fortress Whey Protein - Chocolate</h2>
+                        <p class="card-text">Chocolate whey protein powder in an 807 g container.</p>
+                        <p class="proposal-price">PHP 1,600</p>
+                        <button class="page-button add-to-cart-button" type="button" data-product-id="product6"
+                            data-product-name="Body Fortress Whey Protein - Chocolate" data-product-price="1600"
+                            data-product-image="Product/Product6.jpg">Add to cart</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card proposal-card product-card h-100">
+                    <img class="card-img-top" src="Product/Product7.jpg"
+                        alt="Nutrifactor creatine monohydrate container">
+                    <div class="card-body">
+                        <h2 class="card-title">Nutrifactor Creatine Monohydrate</h2>
+                        <p class="card-text">Unflavored creatine monohydrate powder in a 200 g container.</p>
+                        <p class="proposal-price">PHP 700</p>
+                        <button class="page-button add-to-cart-button" type="button" data-product-id="product7"
+                            data-product-name="Nutrifactor Creatine Monohydrate" data-product-price="700"
+                            data-product-image="Product/Product7.jpg">Add to cart</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card proposal-card product-card h-100">
+                    <img class="card-img-top" src="Product/Product8.jpg" alt="MuscleTech vanilla mass gainer bag">
+                    <div class="card-body">
+                        <h2 class="card-title">MuscleTech Mass Gainer - Vanilla (Bag)</h2>
+                        <p class="card-text">Vanilla milkshake flavored mass gainer powder in a 2.34 kg bag.</p>
+                        <p class="proposal-price">PHP 3,200</p>
+                        <button class="page-button add-to-cart-button" type="button" data-product-id="product8"
+                            data-product-name="MuscleTech Mass Gainer - Vanilla (Bag)" data-product-price="3200"
+                            data-product-image="Product/Product8.jpg">Add to cart</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card proposal-card product-card h-100">
+                    <img class="card-img-top" src="Product/Product9.jpg"
+                        alt="Premier Protein vanilla whey protein container">
+                    <div class="card-body">
+                        <h2 class="card-title">Premier Protein Whey - Vanilla</h2>
+                        <p class="card-text">Vanilla milkshake flavored whey protein powder in a 663 g container.</p>
+                        <p class="proposal-price">PHP 1,700</p>
+                        <button class="page-button add-to-cart-button" type="button" data-product-id="product9"
+                            data-product-name="Premier Protein Whey - Vanilla" data-product-price="1700"
+                            data-product-image="Product/Product9.jpg">Add to cart</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card proposal-card product-card h-100">
+                    <img class="card-img-top" src="Product/Product10.jpg"
+                        alt="Gainz Mass Core chocolate hazelnut gainer tub">
+                    <div class="card-body">
+                        <h2 class="card-title">Gainz Mass Core - Chocolate Hazelnut</h2>
+                        <p class="card-text">Chocolate hazelnut flavored mass gainer powder in a 3.75 kg container.</p>
+                        <p class="proposal-price">PHP 2,500</p>
+                        <button class="page-button add-to-cart-button" type="button" data-product-id="product10"
+                            data-product-name="Gainz Mass Core - Chocolate Hazelnut" data-product-price="2500"
+                            data-product-image="Product/Product10.jpg">Add to cart</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <a class="footer-brand" href="index.html">Gym4U</a>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="business.html">Business Plan</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <p class="footer-copyright">&copy; Cayanan Daniel Andrei S.</p>
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
